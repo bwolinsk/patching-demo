@@ -5,14 +5,14 @@ packages:
 - name: acpid
   version: 2.0.31
 - name: audit
-  version: 3.0-0.10.20180831git0047a6c.el8
+  version: 3.0-0.10.20180831git0047a6c
 - name: bash
   version: 4.4.20
 - name: chrony
-  version: 3.3-3.el8
+  version: 3.3-3
 - name: curl
-  version: 7.61.1-18.el8
+  version: 7.61.1-18
 - name: grep
-  version: 3.1-6.el8 
+  version: 3.1-6 
 
 untracked: false
