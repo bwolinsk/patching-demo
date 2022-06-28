@@ -5,14 +5,14 @@ packages:
 - name: acpid
   version: 2.0.31
 - name: audit
-  version: 3.1
+  version: 2.2
 - name: bash
   version: 4.4.20
 - name: chrony
   version: 3.3
 - name: curl
-  version: 7.65.1
+  version: 7.2
 - name: grep
-  version: 3.8
+  version: 2.9
 
 untracked: false
