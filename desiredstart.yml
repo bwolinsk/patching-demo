@@ -5,7 +5,7 @@
   tasks:
     - name: install
       yum:
-        name: chrony=3.0
+        name: chrony-3.0
         state: present
         allow_downgrade: true
     - name: install
