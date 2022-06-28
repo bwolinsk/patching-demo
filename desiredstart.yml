@@ -5,20 +5,23 @@
   tasks:
     - name: install
       yum:
-        name: chrony-3.0
+        name: chrony-3.0.el8.x86_64 
         state: present
         allow_downgrade: true
     - name: install
       yum:
-        name: grep=2.5.4
+        name: grep=2.5.4.el8.x86_64 
         state: present
+        allow_downgrade: true
     - name: install
       yum:
-        name: curl=7.19.7
-        state: present
+        name: curl-7.61.7.el8.x86_64 
+        state: latest 
+        allow_downgrade: yes
     - name: install
       yum:
-        name: audit=2.3.1
+        name: audit=2.3.1.el8.x86_64 
         state: present
+        allow_downgrade: true
         
                 
