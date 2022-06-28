@@ -5,19 +5,19 @@
   tasks:
     - name: install
       yum:
-        name: chrony=2.2
+        name: chrony=2.1
         state: present
     - name: install
       yum:
-        name: grep=2.0
+        name: grep=2.5.4
         state: present
     - name: install
       yum:
-        name: curl=6.0
+        name: curl=7.19.7
         state: present
     - name: install
       yum:
-        name: audit=2.0
+        name: audit=2.3.1
         state: present
         
                 
