@@ -5,8 +5,9 @@
   tasks:
     - name: install
       yum:
-        name: chrony=2.1-1
+        name: chrony=3.0
         state: present
+        allow_downgrade: true
     - name: install
       yum:
         name: grep=2.5.4
