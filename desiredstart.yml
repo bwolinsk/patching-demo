@@ -1,0 +1,23 @@
+---
+- name: change package versions before update
+  hosts: all
+  become: true
+  tasks:
+    - name: install
+      yum:
+        name: chrony=2.2
+        state: present
+    - name: install
+      yum:
+        name: grep=2.0
+        state: present
+    - name: install
+      yum:
+        name: curl=6.0
+        state: present
+    - name: install
+      yum:
+        name: audit=2.0
+        state: present
+        
+                
