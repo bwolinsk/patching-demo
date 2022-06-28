@@ -6,7 +6,25 @@
   
     - name: install
       yum:
-        name: curl-7.61.7.el8.x86_64 
+        name: curl-7.61.1-11.el8
+        state: latest 
+        allow_downgrade: yes
+        
+    - name: install
+      yum:
+        name: chrony-3.5-1.el8 
+        state: latest 
+        allow_downgrade: yes
+        
+    - name: install
+      yum:
+        name: audit-3.0-0.17.20191104git1c2f876.el8
+        state: latest 
+        allow_downgrade: yes
+        
+    - name: install
+      yum:
+        name: grep-3.1-6.el8
         state: latest 
         allow_downgrade: yes
     
