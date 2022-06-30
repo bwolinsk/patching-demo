@@ -1,6 +1,6 @@
 ---
 - name: Install Packages using dnf
   ansible.builtin.dnf:
-    name: "{{ packages }}{{release}}" 
+    name: "{{ packages }}" 
     allow_downgrade: true
     state: present 
