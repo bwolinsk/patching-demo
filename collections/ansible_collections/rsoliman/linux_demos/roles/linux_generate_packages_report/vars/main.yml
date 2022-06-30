@@ -8,10 +8,10 @@ packages:
   version: 4.0
 - name: bash
   version: 4.4.20
-- name: virt-who
-  version: 0.23
-- name: virt-install
-  version: 2.0
+- name: usbguard
+  version: 1.0
+- name: udisks2
+  version: 2.8
 - name: veritysetup
   version: 2.2
 
