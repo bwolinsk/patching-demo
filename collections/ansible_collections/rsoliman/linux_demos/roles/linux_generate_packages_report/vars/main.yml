@@ -4,15 +4,15 @@ packages:
   version: 2.2.53
 - name: acpid
   version: 2.0.31
-- name: audit
-  version: 3.0
+- name: yum
+  version: 4.0
 - name: bash
   version: 4.4.20
-- name: chrony
-  version: 3.3
-- name: curl
-  version: 7.61.1
-- name: grep
-  version: 3.1 
+- name: virt-who
+  version: 0.23
+- name: virt-install
+  version: 2.0
+- name: veritysetup
+  version: 2.2
 
 untracked: false
