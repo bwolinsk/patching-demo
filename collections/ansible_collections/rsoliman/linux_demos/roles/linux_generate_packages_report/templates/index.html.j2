@@ -70,7 +70,8 @@
                                 {% set query = '[?(\"name\"== \'' ~ package.name ~ '\')].\"version\" | [0]' %}
                                 {% set version = packages | community.general.json_query(query) %}
                                 <td>{{ version }}</td>
-                                {% if package.version-package.release == version  %}
+				{% set pkg_rel = package.version ~ '-' ~ package.release %}
+                                {% if pkg_rel == version  %}
                                     <td style="text-align: center; vertical-align: middle;"> <img src="compliant.png" title="Compliant" alt="Compliant" width="20" height="20" /> </td>
                                 {% else %}
                                     <td style="text-align: center; vertical-align: middle;"> <img src="noncompliant.png" title="Non Compliant" alt="Non Compliant" width="20" height="20" /> </td>
