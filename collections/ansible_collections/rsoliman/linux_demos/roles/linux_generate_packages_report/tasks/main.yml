@@ -18,7 +18,7 @@
 - name: debug var
   debug:
     var: installed_result
-    verbostiy: 2
+   
 
 - name: Use template to Generate report of packages and their compliance
   template:
