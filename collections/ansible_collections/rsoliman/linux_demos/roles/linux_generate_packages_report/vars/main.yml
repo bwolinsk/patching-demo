@@ -1,11 +1,9 @@
 ---
 packages:
-- name: acpid
-  version: 2.0.31
 - name: audit
   version: 3.0-0.10.20180831git0047a6c.el8
 - name: bash
-  version: 4.4.20
+  version: 4.4.20-3.el8
 - name: chrony
   version: 3.3-3.el8
 - name: curl
