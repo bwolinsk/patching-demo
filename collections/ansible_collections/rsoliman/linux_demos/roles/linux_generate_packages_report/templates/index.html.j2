@@ -66,11 +66,11 @@
                                 <tr class="child-{{ host | replace(".", "") }}" style="display: table-row;">
                                 <td></td>
                                 <td>{{ package.name }}</td>
-                                <td>{{ package.version.release }}</td>
+                                <td>{{ package.version}}</td>
                                 {% set query = '[?(\"name\"== \'' ~ package.name ~ '\')].\"version\" | [0]' %}
                                 {% set version = packages | community.general.json_query(query) %}
                                 <td>{{ version }}</td>
-                                {% if package.version.release == version  %}
+                                {% if package.version == version  %}
                                     <td style="text-align: center; vertical-align: middle;"> <img src="compliant.png" title="Compliant" alt="Compliant" width="20" height="20" /> </td>
                                 {% else %}
                                     <td style="text-align: center; vertical-align: middle;"> <img src="noncompliant.png" title="Non Compliant" alt="Non Compliant" width="20" height="20" /> </td>
@@ -81,7 +81,7 @@
                                     <tr class="child-{{ host | replace(".", "") }}" style="display: table-row;">
                                     <td></td>
                                     <td>{{ package.name }}</td>
-                                    <td>{{ package.version.release }}</td>
+                                    <td>{{ package.version}}</td>
                                     <td>NA</td>
                                     <td style="text-align: center; vertical-align: middle;"><img src="na.png" title="NA" alt="NA" width="20" height="20" /></td>
                                     </tr>
