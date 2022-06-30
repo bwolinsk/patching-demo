@@ -50,7 +50,7 @@
                        <td>{{ host }}</td>
                        <td>{{ hostvars[host].ansible_fqdn }}</td>
                        <td>{{ hostvars[host].ansible_distribution }}</td>
-                       <td>{{ hostvars[host].ansible_distribution_version.ansible_distribution_release }}</td>
+                       <td>{{ hostvars[host].ansible_distribution_version }}</td>
                        <td>{{ hostvars[host].ansible_kernel }}</td>
                 </tr>
                 {% if hostvars[host].installed_result.results is defined and hostvars[host].installed_result.results|length > 0  %}
