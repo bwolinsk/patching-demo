@@ -1,0 +1,7 @@
+---
+- name: snapshot
+  hosts: all
+  tasks:
+    - name: message
+      debug:
+        msg: "Email was sent."
