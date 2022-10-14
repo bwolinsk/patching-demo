@@ -4,4 +4,4 @@
   tasks:
     - name: message
       debug:
-        msg: "{{ message }}"
+        msg: "snapshot taken"
