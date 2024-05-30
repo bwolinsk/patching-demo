@@ -1,9 +1,9 @@
 ---
 packages:
 - name: bash
-  version: 5.1.8-5.el9
+  version: 5.1.8-9.el9
 - name: curl
-  version: 7.76.1-23.el9_2.1
+  version: 7.76.1-29.el9_4
 
 
 untracked: false
